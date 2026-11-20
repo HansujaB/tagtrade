@@ -18,7 +18,7 @@ export function XPostProof() {
           <Avatar size="lg" className="size-10"><AvatarFallback className="bg-[#a9bdc9] text-[#4b5f6c]"><UserRound className="size-6" /></AvatarFallback></Avatar>
           <div className="flex min-w-0 flex-1 items-center justify-between"><div className="flex flex-col leading-5"><strong className="text-[15px]">Trader</strong><span className="text-sm text-[#71767b]">@trader</span></div><MoreHorizontal className="size-5 text-[#71767b]" aria-hidden="true" /></div>
         </div>
-        <p className="mt-5 break-words text-[17px] leading-[1.55]"><span className="text-[#1d9bf0]">@tagtrade</span> buy 1 XRP of <span className="text-[#1d9bf0]">$DAWN</span></p>
+        <p className="mt-5 break-words text-[17px] leading-[1.55]"><span className="text-[#1d9bf0]">@tagtradex</span> buy 1 XRP of <span className="text-[#1d9bf0]">$DAWN</span></p>
         <div className="mt-5 border-t border-[#2f3336] py-4"><PostActions /></div>
       </div>
       <div data-x-composer className="flex items-center gap-3 border-y border-[#2f3336] px-5 py-4">
@@ -29,7 +29,7 @@ export function XPostProof() {
       <div data-x-reply className="flex gap-3 px-5 pb-4 pt-5">
         <Avatar size="lg" className="size-10"><AvatarFallback className="bg-[#f7f9f9] text-black">T</AvatarFallback></Avatar>
         <div className="min-w-0 flex-1">
-          <div className="flex flex-wrap items-center gap-x-1 text-sm leading-5"><strong className="text-[15px]">TagTrade</strong><span className="text-[#71767b]">@tagtrade</span><MoreHorizontal className="ml-auto size-5 text-[#71767b]" aria-hidden="true" /></div>
+          <div className="flex flex-wrap items-center gap-x-1 text-sm leading-5"><strong className="text-[15px]">TagTradeX</strong><span className="text-[#71767b]">@tagtradex</span><MoreHorizontal className="ml-auto size-5 text-[#71767b]" aria-hidden="true" /></div>
           <p className="mt-1 break-words text-[15px] leading-[1.45]">Bought <span className="text-[#1d9bf0]">$DAWN</span> with 1 XRP from your pocket.</p>
           <div className="mt-5"><PostActions reply /></div>
         </div>

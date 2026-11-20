@@ -17,7 +17,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "TagTrade — Tweet it. Chat it. Trade it.",
+  title: "TagTradeX — Tweet it. Chat it. Trade it.",
   description: "Buy, sell, and launch tokens on the XRP Ledger through X or Telegram.",
 };
 

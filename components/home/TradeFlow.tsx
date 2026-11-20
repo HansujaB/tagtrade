@@ -8,7 +8,7 @@ import styles from "./TradeFlow.module.css";
 
 const stages = [
   { label: "Message", title: "One request. Either channel.", description: "An X mention or a Telegram message starts the same process.", seconds: 2.5 },
-  { label: "Match token", title: "Same ticker. Which token?", description: "A ticker alone isn’t unique. TagTrade asks you to identify the issuer before continuing.", seconds: 4.8 },
+  { label: "Match token", title: "Same ticker. Which token?", description: "A ticker alone isn’t unique. TagTradeX asks you to identify the issuer before continuing.", seconds: 4.8 },
   { label: "Tinyfish", title: "Research before the request proceeds.", description: "Tinyfish reads the project’s website and public docs, then brings a short summary into the conversation.", seconds: 4 },
   { label: "Checks", title: "Every request gets checked.", description: "The account, amount, daily budget, and activity must all pass.", seconds: 4.2 },
   { label: "If blocked", title: "One failed check stops the trade.", description: "A blocked request gets an explanation, not a purchase reply.", seconds: 4.5 },
@@ -69,14 +69,14 @@ export function TradeFlow() {
 
   return <section id="trade-flow" ref={scope} className="py-16 lg:py-24" aria-labelledby="trade-flow-title">
     <div className="mb-9 flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
-      <div><p className="mb-4 font-mono text-xs uppercase tracking-[0.14em] text-muted-foreground">Inside TagTrade</p><h2 id="trade-flow-title" className="text-3xl font-medium tracking-[-0.04em] sm:text-4xl">Two ways in. One checked trade.</h2></div>
+      <div><p className="mb-4 font-mono text-xs uppercase tracking-[0.14em] text-muted-foreground">Inside TagTradeX</p><h2 id="trade-flow-title" className="text-3xl font-medium tracking-[-0.04em] sm:text-4xl">Two ways in. One checked trade.</h2></div>
     </div>
     <div className={styles.shell}>
       <div className={styles.toolbar}><span className="font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">A $DAWN example · from message to reply</span><span className={styles.stepCount}>{reduced ? "THE SHARED FLOW" : `0${step + 1} / 07`}</span></div>
       <div className={styles.diagram}>
         <div className={styles.entry}>
           <p className={styles.eyebrow}>01 / Your message</p>
-          <div className={styles.message}><span className={styles.channel}>𝕏 <span>X</span></span><p><span className="text-muted-foreground">@tagtrade</span><br />buy 1 XRP of $DAWN</p></div>
+          <div className={styles.message}><span className={styles.channel}>𝕏 <span>X</span></span><p><span className="text-muted-foreground">@tagtradex</span><br />buy 1 XRP of $DAWN</p></div>
           <span className={styles.or}>or</span>
           <div className={styles.message}><span className={styles.channel}><Send size={16} /><span>Telegram</span></span><p>Buy 1 XRP<br />of $DAWN</p></div>
           <p className={styles.small}>Same account. Same limits.</p>
@@ -86,7 +86,7 @@ export function TradeFlow() {
           <div className={styles.engineHeader}><span className={styles.eyebrow}>02 / Understand & check</span></div>
           <div className="flex flex-wrap items-center gap-2 text-sm">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/brand/tagtrade-lockup-white.svg" alt="TagTrade" width="135" height="20" className="h-5 w-auto" /><span className="mx-1 text-muted-foreground">+</span>
+            <img src="/brand/tagtradex-lockup-white.svg" alt="TagTradeX" width="135" height="20" className="h-5 w-auto" /><span className="mx-1 text-muted-foreground">+</span>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/brand/tinyfish-icon.svg" alt="" width="25" height="25" /><span>Tinyfish</span>
           </div>

@@ -1,5 +1,5 @@
 const steps = [
-  { number: "01", name: "Find the exact asset", detail: "If two tokens share a name, TagTrade asks which one you want to buy." },
+  { number: "01", name: "Find the exact asset", detail: "If two tokens share a name, TagTradeX asks which one you want to buy." },
   { number: "02", name: "See what’s behind the token", detail: "Tinyfish reads the project’s website and public pages, then summarizes what the project does." },
   { number: "03", name: "Check the details", detail: "See the token and how much XRP you’re spending, right in the conversation." },
 ];

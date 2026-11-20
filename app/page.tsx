@@ -17,7 +17,7 @@ export default function Home() {
     <main id="main" className="mx-auto max-w-[1360px] px-6 lg:px-12">
       <Hero />
       <ScrollScene kind="example"><section id="x-example" className="grid items-center gap-10 py-20 lg:grid-cols-[0.75fr_1.25fr] lg:gap-20 lg:py-36">
-        <div data-scene-heading className="max-w-[470px]"><h2 className="font-heading text-[clamp(2.8rem,5vw,5rem)] font-medium leading-[1.05] tracking-[-0.045em]">A post becomes a trade.</h2><p className="mt-6 max-w-[360px] text-lg leading-[1.6] text-muted-foreground">Tag @tagtrade on X. Get a purchase reply in the same thread.</p></div>
+        <div data-scene-heading className="max-w-[470px]"><h2 className="font-heading text-[clamp(2.8rem,5vw,5rem)] font-medium leading-[1.05] tracking-[-0.045em]">A post becomes a trade.</h2><p className="mt-6 max-w-[360px] text-lg leading-[1.6] text-muted-foreground">Tag @tagtradex on X. Get a purchase reply in the same thread.</p></div>
         <div data-scene-visual><XPostProof /></div>
       </section></ScrollScene>
       <TradeFlow />
