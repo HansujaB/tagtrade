@@ -69,7 +69,7 @@ export function TradeFlow() {
 
   return <section id="trade-flow" ref={scope} className="py-16 lg:py-24" aria-labelledby="trade-flow-title">
     <div className="mb-9 flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
-      <div><p className="mb-4 font-mono text-xs uppercase tracking-[0.14em] text-muted-foreground">Inside TagTradeX</p><h2 id="trade-flow-title" className="text-3xl font-medium tracking-[-0.04em] sm:text-4xl">Two ways in. One checked trade.</h2></div>
+      <div><p className="mb-4 font-mono text-xs uppercase tracking-[0.14em] text-muted-foreground">Inside TagTradeX</p><h2 id="trade-flow-title" className="section-heading">Two ways in. One checked trade.</h2></div>
     </div>
     <div className={styles.shell}>
       <div className={styles.toolbar}><span className="font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">A $DAWN example · from message to reply</span><span className={styles.stepCount}>{reduced ? "THE SHARED FLOW" : `0${step + 1} / 07`}</span></div>

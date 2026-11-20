@@ -8,7 +8,7 @@ import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuL
 import { Sheet, SheetClose, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 
 const links = [
-  { href: "#how-it-works", label: "How it works" },
+  { href: "#trade-flow", label: "How it works" },
   { href: "#controls", label: "Controls" },
   { href: "#launch", label: "Launch" },
 ];
@@ -18,7 +18,7 @@ export function Navbar() {
   const [loginOpen, setLoginOpen] = useState(false);
   return (
     <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-sm">
-      <div className="mx-auto flex h-[76px] max-w-[1360px] items-center justify-between gap-4 px-6 lg:px-12">
+      <div className="landing-wide flex h-[76px] items-center justify-between gap-4">
         <a href="#top" aria-label="TagTradeX home" className="shrink-0 rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/brand/tagtradex-lockup-white.svg" alt="TagTradeX" width="162" height="24" className="h-7 w-auto" />
@@ -38,7 +38,7 @@ export function Navbar() {
               </DialogHeader>
               <DialogFooter>
                 <DialogClose render={<Button variant="outline" />}>Close</DialogClose>
-                <DialogClose render={<Button render={<a href="#x-example" />} />}>
+                <DialogClose nativeButton={false} render={<Button nativeButton={false} render={<a href="#x-example" />} />}>
                   See X example <ArrowUpRight data-icon="inline-end" />
                 </DialogClose>
               </DialogFooter>
@@ -49,7 +49,7 @@ export function Navbar() {
             <SheetContent>
               <SheetHeader><SheetTitle>Navigate TagTradeX</SheetTitle><SheetDescription>Explore the landing page.</SheetDescription></SheetHeader>
               <nav className="flex flex-col gap-2 px-4">
-                {links.map((link) => <SheetClose key={link.href} render={<Button render={<a href={link.href} />} variant="ghost" className="min-h-11 justify-start" />}>{link.label}</SheetClose>)}
+                {links.map((link) => <SheetClose key={link.href} nativeButton={false} render={<Button nativeButton={false} render={<a href={link.href} />} variant="ghost" className="min-h-11 justify-start" />}>{link.label}</SheetClose>)}
               </nav>
             </SheetContent>
           </Sheet>

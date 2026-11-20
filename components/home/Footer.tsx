@@ -21,11 +21,11 @@ export function Footer() {
     return () => media.revert();
   }, { scope });
   const groups = [
-    { title: "Explore", links: [["How it works", "#how-it-works"], ["Trading on X", "#x-example"], ["Your controls", "#controls"]] },
+    { title: "Explore", links: [["How it works", "#trade-flow"], ["Trading on X", "#x-example"], ["Your controls", "#controls"]] },
     { title: "Build", links: [["Launch a token", "#launch"], ["XRP Ledger", "https://xrpl.org/"], ["Tinyfish", "https://www.tinyfish.ai/"]] },
   ];
-  return <footer ref={scope} className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[#101411] pt-16 pb-6">
-    <div className="mx-auto max-w-[1360px] px-6 lg:px-12">
+  return <footer ref={scope} className="relative overflow-hidden bg-[#101411] pt-16 pb-6">
+    <div className="landing-wide">
       <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-[1.45fr_1fr_1fr_1fr]">
         <div data-footer-column>
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -39,9 +39,9 @@ export function Footer() {
         </div>
         {groups.map(group => <nav data-footer-column key={group.title} aria-label={group.title}>
           <h3 className="mb-5 font-mono text-[10px] uppercase tracking-[0.16em] text-[#8d998f]">{group.title}</h3>
-          <div className="flex flex-col items-start">{group.links.map(([label, href]) => <Button key={label} render={<a href={href} />} variant="link" className="min-h-11 px-0 font-normal text-[#c5cec7] hover:text-white">{label}</Button>)}</div>
+          <div className="flex flex-col items-start">{group.links.map(([label, href]) => <Button key={label} nativeButton={false} render={<a href={href} />} variant="link" className="min-h-11 px-0 font-normal text-[#c5cec7] hover:text-white">{label}</Button>)}</div>
         </nav>)}
-        <div data-footer-column><h3 className="mb-5 font-mono text-[10px] uppercase tracking-[0.16em] text-[#8d998f]">One message away</h3><p className="max-w-[210px] text-sm leading-7 text-[#c5cec7]">Buy, sell, and launch.<br />From X or Telegram.</p><Button render={<a href="#top" />} variant="link" className="mt-5 min-h-11 px-0 font-normal text-[#c5cec7]">Back to top ↗</Button></div>
+        <div data-footer-column><h3 className="mb-5 font-mono text-[10px] uppercase tracking-[0.16em] text-[#8d998f]">One message away</h3><p className="max-w-[210px] text-sm leading-7 text-[#c5cec7]">Buy, sell, and launch.<br />From X or Telegram.</p><Button nativeButton={false} render={<a href="#top" />} variant="link" className="mt-5 min-h-11 px-0 font-normal text-[#c5cec7]">Back to top ↗</Button></div>
       </div>
       <svg data-footer-mark viewBox="0 0 1200 290" role="img" aria-label="TagTradeX" className="mt-16 w-full overflow-visible sm:mt-24">
         <defs>

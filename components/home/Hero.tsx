@@ -25,21 +25,21 @@ export function Hero() {
     });
   }, { scope });
 
-  return <section ref={scope} className="relative left-1/2 flex min-h-[700px] w-screen -translate-x-1/2 flex-col justify-center overflow-hidden bg-black py-24 lg:min-h-[760px] lg:py-32">
+  return <section ref={scope} className="relative flex min-h-[700px] flex-col justify-center overflow-hidden bg-black py-24 lg:min-h-[760px] lg:py-32">
     <div data-hero-media className="absolute inset-0">
       <Image data-hero-image src="/hero-ledger-glass.webp" alt="" fill priority sizes="100vw" className="object-cover object-center" />
       <GlassCursor />
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
     </div>
-    <div className="relative z-10 mx-auto w-full max-w-[1360px] px-6 lg:px-12">
+    <div className="landing-wide relative z-10">
       <div className="max-w-[930px]">
-      <h1 data-hero-copy className="font-heading text-[clamp(3.15rem,5.15vw,5.3rem)] font-medium leading-[1.05] tracking-[-0.045em]">
+      <h1 data-hero-copy className="font-heading text-[clamp(2.75rem,4.4vw,4rem)] font-medium leading-[1.05] tracking-[-0.045em]">
         Buy, sell, and launch<br className="hidden sm:block" /> tokens from a message.
       </h1>
-      <p data-hero-copy className="mt-8 max-w-[550px] text-[clamp(1.05rem,1.45vw,1.25rem)] leading-[1.55] text-[#c4c4c4]">Trade on the XRP Ledger through X or Telegram. Tinyfish researches the token before you trade.</p>
+      <p data-hero-copy className="mt-8 max-w-[550px] text-base sm:text-lg leading-[1.55] text-[#c4c4c4]">Trade on the XRP Ledger through X or Telegram. Tinyfish researches the token before you trade.</p>
       <div data-hero-copy className="mt-10 flex flex-wrap gap-3">
-        <Button render={<a href="#x-example" />} size="lg" className="min-h-12 rounded-sm px-5">See X example <ArrowDownRight data-icon="inline-end" /></Button>
-        <Button render={<a href="#launch" />} size="lg" variant="outline" className="min-h-12 rounded-sm border-white/35 bg-black/45 px-5">Explore launch <ArrowUpRight data-icon="inline-end" /></Button>
+        <Button nativeButton={false} render={<a href="#x-example" />} size="lg" className="min-h-12 rounded-sm px-5">See X example <ArrowDownRight data-icon="inline-end" /></Button>
+        <Button nativeButton={false} render={<a href="#launch" />} size="lg" variant="outline" className="min-h-12 rounded-sm border-white/35 bg-black/45 px-5">Explore launch <ArrowUpRight data-icon="inline-end" /></Button>
       </div>
       <div data-hero-copy className="mt-20 flex flex-wrap items-center gap-x-10 gap-y-6 text-sm text-[#c4c4c4]">
         <div className="flex items-center gap-3">

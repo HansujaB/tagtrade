@@ -14,17 +14,21 @@ export default function Home() {
     <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-primary focus:px-4 focus:py-3 focus:text-primary-foreground">Skip to content</a>
     <div id="top" />
     <Navbar />
-    <main id="main" className="mx-auto max-w-[1360px] px-6 lg:px-12">
+    <main id="main">
       <Hero />
-      <ScrollScene kind="example"><section id="x-example" className="grid items-center gap-10 py-20 lg:grid-cols-[0.75fr_1.25fr] lg:gap-20 lg:py-36">
-        <div data-scene-heading className="max-w-[470px]"><h2 className="font-heading text-[clamp(2.8rem,5vw,5rem)] font-medium leading-[1.05] tracking-[-0.045em]">A post becomes a trade.</h2><p className="mt-6 max-w-[360px] text-lg leading-[1.6] text-muted-foreground">Tag @tagtradex on X. Get a purchase reply in the same thread.</p></div>
+      <div className="mx-auto max-w-[1360px] px-6 lg:px-12">
+      <ScrollScene kind="example"><section id="x-example" className="grid items-center gap-10 py-20 lg:grid-cols-[0.75fr_1.25fr] lg:gap-20 lg:py-28">
+        <div data-scene-heading className="max-w-[470px]"><h2 className="section-heading">A post becomes a trade.</h2><p className="mt-6 max-w-[360px] section-description">Tag @tagtradex on X. Get a purchase reply in the same thread.</p></div>
         <div data-scene-visual><XPostProof /></div>
       </section></ScrollScene>
-      <TradeFlow />
+      </div>
+      <div className="landing-wide"><TradeFlow /></div>
+      <div className="mx-auto max-w-[1360px] px-6 lg:px-12">
       <ScrollScene kind="research"><AgentResearch /></ScrollScene>
       <ScrollScene kind="controls"><Controls /></ScrollScene>
       <ScrollScene kind="launch"><TokenLaunch /></ScrollScene>
       <ScrollScene kind="closing"><Closing /></ScrollScene>
+      </div>
       <Footer />
     </main>
   </>;
