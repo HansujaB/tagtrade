@@ -1,3 +1,4 @@
+import { TradeFlow } from "@/components/home/TradeFlow";
 import { AgentResearch } from "@/components/home/AgentResearch";
 import { Closing } from "@/components/home/Closing";
 import { Footer } from "@/components/home/Footer";
@@ -19,6 +20,7 @@ export default function Home() {
         <div data-scene-heading className="max-w-[470px]"><h2 className="font-heading text-[clamp(2.8rem,5vw,5rem)] font-medium leading-[1.05] tracking-[-0.045em]">A post becomes a trade.</h2><p className="mt-6 max-w-[360px] text-lg leading-[1.6] text-muted-foreground">Tag @tagtrade on X. Get a purchase reply in the same thread.</p></div>
         <div data-scene-visual><XPostProof /></div>
       </section></ScrollScene>
+      <TradeFlow />
       <ScrollScene kind="research"><AgentResearch /></ScrollScene>
       <ScrollScene kind="controls"><Controls /></ScrollScene>
       <ScrollScene kind="launch"><TokenLaunch /></ScrollScene>
